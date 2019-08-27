@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="search_view">Search</string>
+    <string name="search_view_arrow">Exit Search</string>
+    <string name="search_view_voice">Voice search</string>
+    <string name="search_view_close">Delete query text</string>
+    <string name="not_supported">Not Supported</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_search"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:minHeight="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/search_view_arrow"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:tint="@color/search_icon"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@android:string/search_go"
+            android:imeOptions="actionSearch"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="12dp"
+            android:textColor="#212121"
+            android:textColorHint="@color/search_text_hint"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_voice"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/search_view_voice"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:tint="@color/search_icon"
+            app:srcCompat="@drawable/ic_voice" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/search_view_close"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:tint="@color/search_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

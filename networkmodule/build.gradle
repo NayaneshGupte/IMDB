@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compile_sdk
+
+
+    defaultConfig {
+        minSdkVersion versions.min_sdk
+        targetSdkVersion versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testOptions.unitTests.includeAndroidResources = true
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            dimension "default"
+        }
+        dev {
+            dimension "default"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+
+        debug {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // To enable experimental functionality like @Parcelize
+    androidExtensions {
+        experimental = true
+    }
+
+}
+
+apply from: 'dependencies.gradle'

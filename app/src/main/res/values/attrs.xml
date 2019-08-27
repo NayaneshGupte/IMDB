@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SearchWidget">
+        <attr name="searchWidgetTextColor" format="color" />
+        <attr name="searchWidgetHintColor" format="color" />
+
+        <attr name="searchWidgetHint" format="string" />
+
+        <attr name="searchWidgetColorIcon" format="color" />
+        <attr name="searchWidgetColorArrow" format="color" />
+        <attr name="searchWidgetColorVoice" format="color" />
+        <attr name="searchWidgetColorClose" format="color" />
+
+        <attr name="searchWidgetBackground" format="color" />
+        <attr name="searchWidgetStatusBarShowColor" format="color" />
+        <attr name="searchWidgetStatusBarHideColor" format="color" />
+    </declare-styleable>
+
+</resources>
